@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎界面</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG实时渲染与转换</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="welcome-container">
-        <h1>欢迎来到我们的网站！</h1>
-        <p>这是一个简单的欢迎界面。</p>
+  <div class="container">
+    <div class="editor">
+      <textarea id="svg-input" placeholder="在此输入SVG代码..."></textarea>
     </div>
+    <div class="preview">
+      <div id="svg-preview"></div>
+      <button id="download-btn">下载PNG</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
